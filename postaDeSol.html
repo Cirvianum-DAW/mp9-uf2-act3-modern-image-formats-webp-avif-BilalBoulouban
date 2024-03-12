@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <nav class="bg-gray-800 text-white p-4">
+        <ul class="flex justify-around">
+            <li><a href="/index.html" class="hover:text-gray-300">Index</a></li>
+
+            <li><a href="/logotip.html" class="hover:text-gray-300">Logotip</a></li>
+            <li><a href="/plujaEstels.html" class="hover:text-gray-300">Pluja</a></li>
+            <li><a href="/transparency.html" class="hover:text-gray-300">Transparency</a></li>
+            <li><a href="/homer.html" class="hover:text-gray-300">Homer</a></li>
+
+        </ul>
+    </nav>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+        <div>
+            <img src="/images/postaDeSol.jpg" alt="Posta De Sol" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <img src="/images/postaDeSolmitg.jpg" alt="Posta De Sol" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <img src="/images/postaDeSolvaix.jpg" alt="Posta De Sol" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <img src="/images/image3.png" alt="Example 3" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+            <img src="/images/image3.gif" alt="Example 3" class="w-full" />
+            <div class="image-info"></div>
+        </div>
+        <div>
+          <img src="/images/LighthousePostaDeSol.png" alt="Example 3" class="w-full" />
+          <div class="image-info"></div>
+      </div>
+    </main>
+    <p><b>What format is the most optimal for this type of image and why?</b>
+        For a sunset image, JPEG is usually the most optimal because it provides good quality for complex images and
+        has better compression than PNG.
+       <b> With what compression quality does the image not lose quality?</b>
+        For JPEG, a compression level of around 70-80% usually maintains a good balance between size and quality.
+        <b>Can we reduce its size even more without losing quality?</b>
+        You can reduce the size further with optimization tools, but extreme compression may reduce quality.
+       <b> What would happen if we save the image several times with JPEG format?</b>
+        If you save an image multiple times in JPEG format, it will undergo 'generation loss', as JPEG is a lossy
+        format. Each save reduces the quality of the image.</p>
+    <script src="/main.js"></script>
+</body>
+
+</html>
